@@ -1,0 +1,116 @@
+/* CSS VARIABLES */
+:root {
+  --green : #44FFA1;
+  --Purple-900: #24053E;
+  --Purple-500: #584D62;
+  --Purple-100: #FCF8FF;
+  --White: #FFFFFF;
+}
+
+  /* CSS MODERN RESET */
+  /* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* TYPOGRAPHY */
+.text-preset-1 {
+  color: var(--White);
+  font-family: "Fraunces", serif;
+  font-size: 3rem; /* Tablet: 3.75rem | Desktop: 5rem */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 3rem */
+  text-align: center;
+}
+
+.text-preset-2 {
+  color: var(--White);
+  font-family: "Fraunces", serif;
+  font-size: 2rem; /* Tablet: 3rem | Desktop: 3.5rem */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 2.4rem */
+}
+
+.text-preset-3 {
+  color: var(--Purple-900);
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem; /* Tablet: 1.75rem | Desktop: 2rem */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.8rem */
+  text-align: center; /* text-align: left; tablet */
+}
+
+.text-preset-4 {
+  color: var(--Purple-900);
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem; /* Desktop: 1.5rem */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 1.8rem */
+  text-align: center; /* text-align: left; tablet */
+}
+
+.text-preset-5 {
+  color: var(--White);
+  font-family: "Manrope", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%; /* 1.8rem */
+}
+
+.button-text {
+  color: var(--color-slate-900, #24053E);
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem; /* Tablet/Desktopp: 1.125rem */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%; /* 1.8rem */
+}
